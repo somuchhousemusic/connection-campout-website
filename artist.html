@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artist Application — Connection Campout 2026</title>
+  <meta name="description" content="Apply to show your art or perform at Connection Campout, October 8–10 2026 at Summer Lake Hot Springs, Oregon." />
+  <link href="https://api.fontshare.com/v2/css?f[]=erode@300,400,500,600,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <svg width="32" height="32" viewBox="0 0 36 36" fill="none">
+          <circle cx="18" cy="18" r="16" stroke="currentColor" stroke-width="1.5"/>
+          <circle cx="18" cy="18" r="8" stroke="currentColor" stroke-width="1.5"/>
+          <circle cx="18" cy="18" r="3" fill="currentColor"/>
+        </svg>
+        <span class="nav-wordmark">Connection Campout</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#gallery">The Place</a>
+        <a href="index.html#info">Info</a>
+        <a href="index.html#get-involved">Get Involved</a>
+        <a href="index.html#tickets" class="nav-cta">Get Tickets</a>
+      </nav>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <button class="mobile-close" id="mobile-close">✕</button>
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="index.html#get-involved" class="mobile-link">Get Involved</a>
+      <a href="index.html#tickets" class="mobile-link highlight">Get Tickets</a>
+    </nav>
+  </div>
+
+  <main class="form-page">
+
+    <!-- HERO -->
+    <div class="form-hero">
+      <img src="images/labyrinth.jpg" alt="Stone labyrinth at Summer Lake Oregon desert" class="form-hero-img" />
+      <div class="form-hero-overlay"></div>
+      <div class="form-hero-content">
+        <p class="section-label">Create With Us</p>
+        <h1 class="hero-title" style="font-size: var(--text-3xl);">Artist Application</h1>
+        <p class="hero-sub" style="font-size: var(--text-base); max-width: 580px; margin-inline: auto;">
+          We invite visual artists, installation builders, live painters, and performance artists to bring their vision to the high desert. We have dedicated space, a small production budget, and a community hungry for beauty and wonder.
+        </p>
+      </div>
+    </div>
+
+    <div class="container narrow" style="padding-top: var(--space-16); padding-bottom: var(--space-24);">
+
+      <!-- WHAT WE'RE LOOKING FOR -->
+      <div class="form-intro-cards">
+        <div class="form-intro-card">
+          <div class="form-intro-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4 L17 10 L24 11 L19 16 L20 23 L14 20 L8 23 L9 16 L4 11 L11 10 Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Large-Scale Installations</h3>
+          <p>Sculpture, light art, interactive environments — pieces that transform the desert landscape.</p>
+        </div>
+        <div class="form-intro-card">
+          <div class="form-intro-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="10" stroke="currentColor" stroke-width="1.5"/><circle cx="14" cy="14" r="4" fill="currentColor" opacity="0.3"/><line x1="14" y1="4" x2="14" y2="8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="14" y1="20" x2="14" y2="24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="4" y1="14" x2="8" y2="14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="20" y1="14" x2="24" y2="14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Live Painting &amp; Performance</h3>
+          <p>Artists who create in real time, responding to music and community energy.</p>
+        </div>
+        <div class="form-intro-card">
+          <div class="form-intro-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="6" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M4 11 L14 17 L24 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Gallery &amp; Prints</h3>
+          <p>Curated wall art and prints for the indoor spaces. Work that speaks to land, connection, and the underground.</p>
+        </div>
+      </div>
+
+      <!-- APPLICATION FORM -->
+      <div class="form-container" style="margin-top: var(--space-12);">
+        <h2 style="font-size: var(--text-xl); margin-bottom: var(--space-8); text-align: center;">Apply Now</h2>
+
+        <form class="application-form" id="artist-form" novalidate>
+
+          <!-- CONTACT INFO -->
+          <div class="form-section-label">Contact Information</div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="artist-name">Artist / Project Name <span class="form-required">*</span></label>
+              <input class="form-input" type="text" id="artist-name" name="artist_name" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="artist-email">Email Address <span class="form-required">*</span></label>
+              <input class="form-input" type="email" id="artist-email" name="email" required autocomplete="email" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="artist-phone">Phone Number</label>
+              <input class="form-input" type="tel" id="artist-phone" name="phone" autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="artist-location">City / Where You're Based</label>
+              <input class="form-input" type="text" id="artist-location" name="location" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="portfolio">Portfolio, Website, or Instagram <span class="form-required">*</span></label>
+            <input class="form-input" type="text" id="portfolio" name="portfolio" required placeholder="https://... or @yourhandle" />
+            <span class="form-hint">Link to where we can see your work. An Instagram profile is totally fine.</span>
+          </div>
+
+          <!-- ART DETAILS -->
+          <div class="form-section-label" style="margin-top: var(--space-10);">Your Work</div>
+
+          <div class="form-group">
+            <label class="form-label" for="art-type">Art Discipline <span class="form-required">*</span></label>
+            <select class="form-select" id="art-type" name="art_type" required>
+              <option value="" disabled selected>Select your discipline...</option>
+              <option value="installation">Large-Scale Installation</option>
+              <option value="interactive">Interactive / Participatory Art</option>
+              <option value="sculpture">Sculpture</option>
+              <option value="light-art">Light / LED Art</option>
+              <option value="live-painting">Live Painting</option>
+              <option value="performance">Performance Art</option>
+              <option value="projection">Visual / Projection Mapping</option>
+              <option value="gallery">Gallery / Wall Art / Prints</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="project-concept">Project Concept <span class="form-required">*</span></label>
+            <textarea class="form-textarea" id="project-concept" name="project_concept" rows="6" required
+              placeholder="Describe what you'd like to bring to Connection Campout. What is it, what does it do, and how does it connect with the festival environment, the land, or the people?"></textarea>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="dimensions">Approximate Dimensions / Footprint</label>
+              <input class="form-input" type="text" id="dimensions" name="dimensions" placeholder="e.g. 10ft tall × 15ft wide" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="budget-request">Budget Request (if any)</label>
+              <input class="form-input" type="text" id="budget-request" name="budget_request" placeholder="e.g. $500 for materials" />
+            </div>
+          </div>
+          <span class="form-hint" style="display:block; margin-top: calc(var(--space-2) * -1); margin-bottom: var(--space-6);">We have a limited art grant fund. Not all projects require funding.</span>
+
+          <div class="form-group">
+            <label class="form-label" for="power-needs">Power &amp; Technical Needs</label>
+            <textarea class="form-textarea" id="power-needs" name="power_needs" rows="3"
+              placeholder="Electrical requirements, water access, structural support, build crew help, special equipment..."></textarea>
+          </div>
+
+          <!-- EXPERIENCE -->
+          <div class="form-section-label" style="margin-top: var(--space-10);">Experience</div>
+
+          <div class="form-group">
+            <label class="form-label" for="past-work">Past Installations or Festival Art</label>
+            <textarea class="form-textarea" id="past-work" name="past_work" rows="4"
+              placeholder="Tell us about previous projects, especially any festival or outdoor installations. What worked, what surprised you?"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="why-us">Why Connection Campout?</label>
+            <textarea class="form-textarea" id="why-us" name="why_us" rows="4"
+              placeholder="What draws you to this event specifically? How does your work connect with the themes of dance, art, wellness, and community?"></textarea>
+          </div>
+
+          <!-- LOGISTICS -->
+          <div class="form-section-label" style="margin-top: var(--space-10);">Logistics</div>
+
+          <div class="form-group">
+            <label class="form-label" for="availability">Can you be on-site for setup (Oct 8)?</label>
+            <select class="form-select" id="availability" name="availability">
+              <option value="" disabled selected>Select...</option>
+              <option value="yes-full">Yes — I can arrive early and stay through the weekend</option>
+              <option value="yes-setup">Yes — I can be there for setup but may leave after</option>
+              <option value="no-install">No — I'd need help with installation</option>
+              <option value="unsure">Not sure yet</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="anything-else">Anything else we should know?</label>
+            <textarea class="form-textarea" id="anything-else" name="anything_else" rows="3"
+              placeholder="Questions, special requests, collaborators, or anything else..."></textarea>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary" style="min-width: 260px; padding: 1rem 2rem; font-size: var(--text-base);">
+              Submit Artist Application
+            </button>
+          </div>
+        </form>
+
+        <!-- SUCCESS STATE -->
+        <div class="form-success" id="artist-success">
+          <div class="form-success-icon">✦</div>
+          <h3>Application Received!</h3>
+          <p>Thank you for sharing your vision with us. We review all artist applications personally and will reach out about next steps. Questions in the meantime? Reach us at <a href="mailto:somuchhousemusic@gmail.com" style="color:var(--color-primary)">somuchhousemusic@gmail.com</a>.</p>
+          <a href="index.html" class="btn btn-outline" style="margin-top: var(--space-8);">Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="justify-content: center; border-top: none; padding-top: 0;">
+        <p>&copy; 2026 SoMuchHouse · <a href="index.html" style="color: var(--color-primary);">Back to Home</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Artist form — mailto submission
+    const artistForm = document.getElementById('artist-form');
+    const artistSuccess = document.getElementById('artist-success');
+
+    if (artistForm) {
+      artistForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        // Collect all fields
+        const data = Object.fromEntries(new FormData(artistForm).entries());
+
+        const subject = encodeURIComponent('Connection Campout — Artist Application: ' + (data.artist_name || 'Unknown'));
+        const body = encodeURIComponent(
+          'ARTIST APPLICATION — Connection Campout 2026\n' +
+          '================================================\n\n' +
+          'Name: ' + (data.artist_name || '') + '\n' +
+          'Email: ' + (data.email || '') + '\n' +
+          'Phone: ' + (data.phone || '') + '\n' +
+          'Location: ' + (data.location || '') + '\n' +
+          'Portfolio: ' + (data.portfolio || '') + '\n\n' +
+          'Discipline: ' + (data.art_type || '') + '\n\n' +
+          'PROJECT CONCEPT:\n' + (data.project_concept || '') + '\n\n' +
+          'Dimensions: ' + (data.dimensions || '') + '\n' +
+          'Budget Request: ' + (data.budget_request || '') + '\n\n' +
+          'Power / Technical Needs:\n' + (data.power_needs || '') + '\n\n' +
+          'Past Work:\n' + (data.past_work || '') + '\n\n' +
+          'Why Connection Campout:\n' + (data.why_us || '') + '\n\n' +
+          'On-site Availability: ' + (data.availability || '') + '\n\n' +
+          'Anything Else:\n' + (data.anything_else || '')
+        );
+
+        // Open mailto with all fields pre-filled
+        window.location.href = 'mailto:somuchhousemusic@gmail.com?subject=' + subject + '&body=' + body;
+
+        // Show success state
+        artistForm.style.display = 'none';
+        artistSuccess.style.display = 'block';
+        artistSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+    }
+  </script>
+</body>
+</html>

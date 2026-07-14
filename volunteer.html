@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Volunteer Application — Connection Campout 2026</title>
+  <meta name="description" content="Apply to volunteer at Connection Campout, October 8–10 2026 at Summer Lake Hot Springs, Oregon." />
+  <link href="https://api.fontshare.com/v2/css?f[]=erode@300,400,500,600,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <svg width="32" height="32" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="16" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="18" r="8" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="18" r="3" fill="currentColor"/></svg>
+        <span class="nav-wordmark">Connection Campout</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#info">Info</a>
+        <a href="index.html#get-involved">Get Involved</a>
+        <a href="index.html#tickets" class="nav-cta">Get Tickets</a>
+      </nav>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <button class="mobile-close" id="mobile-close">✕</button>
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="index.html#tickets" class="mobile-link highlight">Get Tickets</a>
+    </nav>
+  </div>
+
+  <main class="form-page">
+    <div class="form-hero">
+      <div class="container narrow">
+        <p class="section-label">Join the Crew</p>
+        <h1 class="section-title">Volunteer Application</h1>
+        <p class="section-body">Connection Campout is made possible by passionate volunteers. In exchange for your time and energy, you receive complimentary festival admission. Apply below — we'll follow up with shift details and schedules as the event approaches.</p>
+      </div>
+    </div>
+
+    <div class="container narrow">
+      <div class="form-container">
+        <form class="application-form" id="volunteer-form" novalidate>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="first-name">First Name <span class="form-required">*</span></label>
+              <input class="form-input" type="text" id="first-name" name="first_name" required autocomplete="given-name" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="last-name">Last Name <span class="form-required">*</span></label>
+              <input class="form-input" type="text" id="last-name" name="last_name" required autocomplete="family-name" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address <span class="form-required">*</span></label>
+            <input class="form-input" type="email" id="email" name="email" required autocomplete="email" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="phone">Phone Number</label>
+            <input class="form-input" type="tel" id="phone" name="phone" autocomplete="tel" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="city">City / Where You're Coming From <span class="form-required">*</span></label>
+            <input class="form-input" type="text" id="city" name="city" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="role-pref">Preferred Volunteer Role <span class="form-required">*</span></label>
+            <select class="form-select" id="role-pref" name="role_preference" required>
+              <option value="" disabled selected>Select a role...</option>
+              <option value="gate">Gate / Entry</option>
+              <option value="setup">Setup & Build Crew</option>
+              <option value="breakdown">Breakdown & Leave No Trace</option>
+              <option value="art">Art Installation Support</option>
+              <option value="wellness">Wellness Area</option>
+              <option value="info-booth">Information Booth</option>
+              <option value="parking">Parking & Directions</option>
+              <option value="anywhere">Open to Anything</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="availability">Availability <span class="form-required">*</span></label>
+            <select class="form-select" id="availability" name="availability" required>
+              <option value="" disabled selected>Select your availability...</option>
+              <option value="full">Full weekend (Oct 8–10)</option>
+              <option value="setup-only">Setup only (Oct 8)</option>
+              <option value="event-only">Event days only (Oct 9–10)</option>
+              <option value="breakdown-only">Breakdown only (Oct 10 afternoon)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="experience">Relevant Experience or Skills</label>
+            <textarea class="form-textarea" id="experience" name="experience" rows="4" placeholder="Tell us about any past festival volunteering, relevant skills, certifications, or anything else that might be useful..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="why">Why do you want to volunteer with us?</label>
+            <textarea class="form-textarea" id="why" name="why" rows="4" placeholder="A few sentences is great..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="emergency">Emergency Contact Name &amp; Phone</label>
+            <input class="form-input" type="text" id="emergency" name="emergency_contact" placeholder="Name — Phone number" />
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary" style="min-width: 240px;">Submit Application</button>
+          </div>
+        </form>
+
+        <div class="form-success">
+          <div class="form-success-icon">✦</div>
+          <h3>Application Received!</h3>
+          <p>Thank you for wanting to be part of Connection Campout. We'll review your application and reach out to <strong>somuchhousemusic@gmail.com</strong> as we finalize the volunteer schedule closer to the event.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="justify-content: center; border-top: none; padding-top: 0;">
+        <p>&copy; 2026 SoMuchHouse · <a href="index.html" style="color: var(--color-primary);">Back to Home</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
