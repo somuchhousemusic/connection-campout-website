@@ -1351,3 +1351,35 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.1; text-wrap: bala
   flex: 1;
   margin-bottom: var(--space-5);
 }
+
+/* ---- LINEUP SECTION ---- */
+.lineup-section { background: var(--color-bg); }
+.lineup-posters {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+  margin-top: var(--space-12);
+}
+.lineup-poster-wrap {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(212, 64, 154, 0.2), var(--shadow-lg);
+  border: 1px solid rgba(212, 64, 154, 0.2);
+}
+.lineup-poster-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@media (max-width: 700px) {
+  .lineup-posters { grid-template-columns: 1fr; }
+}
+
+/* ---- SOLD OUT BADGE ---- */
+.ticket-badge--soldout {
+  background: #555 !important;
+  color: #ccc !important;
+}
+.ticket-card--soldout {
+  opacity: 0.75;
+}
