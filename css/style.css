@@ -1383,3 +1383,34 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.1; text-wrap: bala
 .ticket-card--soldout {
   opacity: 0.75;
 }
+
+/* ---- CO-CREATORS SECTION ---- */
+.cocreators-section { background: var(--color-surface); }
+.cocreators-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+  margin-top: var(--space-12);
+}
+.cocreator-card {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(212, 64, 154, 0.15), var(--shadow-md);
+  border: 1px solid rgba(212, 64, 154, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cocreator-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 50px rgba(212, 64, 154, 0.3), var(--shadow-lg);
+}
+.cocreator-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@media (max-width: 900px) {
+  .cocreators-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 500px) {
+  .cocreators-grid { grid-template-columns: 1fr; }
+}
