@@ -1451,3 +1451,38 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.1; text-wrap: bala
 @media (max-width: 600px) {
   .private-notice { flex-direction: column; gap: var(--space-3); }
 }
+
+/* ---- SINGLE DAY PASSES NOTICE ---- */
+.day-passes-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-5);
+  max-width: 760px;
+  margin: var(--space-10) auto var(--space-4);
+  background: rgba(212, 168, 67, 0.07);
+  border: 1px solid rgba(212, 168, 67, 0.3);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6) var(--space-8);
+}
+.day-passes-notice-icon {
+  flex-shrink: 0;
+  color: var(--color-accent-gold);
+  margin-top: 2px;
+}
+.day-passes-notice-text strong {
+  display: block;
+  color: var(--color-accent-gold);
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-2);
+}
+.day-passes-notice-text p {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .day-passes-notice { flex-direction: column; gap: var(--space-3); padding: var(--space-5); }
+}
