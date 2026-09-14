@@ -1414,3 +1414,40 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.1; text-wrap: bala
 @media (max-width: 500px) {
   .cocreators-grid { grid-template-columns: 1fr; }
 }
+
+/* ---- PRIVATE EVENT NOTICE ---- */
+.private-notice-section {
+  background: rgba(212, 64, 154, 0.06);
+  border-top: 1px solid rgba(212, 64, 154, 0.2);
+  border-bottom: 1px solid rgba(212, 64, 154, 0.2);
+  padding: var(--space-8) 0;
+}
+.private-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-5);
+  max-width: 760px;
+  margin: 0 auto;
+}
+.private-notice-icon {
+  flex-shrink: 0;
+  color: var(--color-primary);
+  margin-top: 2px;
+}
+.private-notice-text strong {
+  display: block;
+  color: var(--color-primary);
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-2);
+}
+.private-notice-text p {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .private-notice { flex-direction: column; gap: var(--space-3); }
+}
